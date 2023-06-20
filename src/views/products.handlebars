@@ -1,0 +1,34 @@
+<h1>Lista de productos</h1>
+
+<div>
+    <h1>Tu perfil</h1>
+    <p>{{user.first_name}}</p>
+    <p>{{user.email}}</p>
+    <p>{{user.age}}</p>
+    <p>{{user.role}}</p>
+    <a href="/api/sessions/logout"><button>Salir</button></a>
+</div>
+
+<div class="products">
+    {{#each products.docs}}
+        <div>
+            <h2>{{this.title}}</h2>
+            <p>Descripcion: {{this.description}}</p>
+            <p>Código: {{this.code}}</p>
+            <p>Precio: ${{this.price}}</p>
+            <p>Stock: {{this.stock}}</p>
+            <p>Categoría: {{this.category}}</p>
+            <button data-id={{this._id}} class="btn">Agregar al Carrito</button>
+        </div>
+    {{/each}}
+
+    {{#if products.hasPrevPage}}
+    <a href={{products.prevLink}}><button>Anterior</button></a>
+    {{/if}}
+
+    {{#if products.hasNextPage}}
+    <a href={{products.nextLink}}><button>Siguiente</button></a>
+    {{/if}}
+</div>
+<script src="/js/index.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

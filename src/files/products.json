@@ -1,0 +1,49 @@
+[
+	{
+		"title": "Calculadora",
+		"description": "chica, solar",
+		"code": "ab5258",
+		"price": 200,
+		"stock": 20,
+		"category": "escolar",
+		"thumbnails": [
+			"http//:imagen-calculadora"
+		],
+		"status": true,
+		"id": 1
+	},
+	{
+		"title": "Hojas A4",
+		"description": "700gr",
+		"code": "abc124",
+		"price": 100,
+		"stock": 20,
+		"category": "escolar",
+		"thumbnails": [
+			"http//:imagen-hoja"
+		],
+		"status": true,
+		"id": 2
+	},
+	{
+		"title": "goma",
+		"description": "chica, solar",
+		"code": "ab5258",
+		"price": 200,
+		"stock": 20,
+		"category": "escolar",
+		"thumbnails": "img/calculadora",
+		"status": true,
+		"id": 3
+	},
+	{
+		"title": "corrector-Rojo",
+		"description": "colores",
+		"code": "9952dfsds",
+		"price": "100",
+		"stock": 20,
+		"category": "escolar",
+		"thumbnails": "http//:imagen-lapicera",
+		"id": 6
+	}
+]
